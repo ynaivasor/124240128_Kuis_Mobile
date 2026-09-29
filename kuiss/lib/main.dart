@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:kuiss/pages/login.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: const LoginPage()));
 }
 
 class MainApp extends StatelessWidget {
@@ -9,8 +10,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(body: Center(child: Text('Hello World!'))),
-    );
+    return const MaterialApp(home: LoginPage());
   }
 }
